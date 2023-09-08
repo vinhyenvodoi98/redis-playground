@@ -10,7 +10,6 @@ services:
       - "./data/:/data"
     command:
       - redis-server
-      # - /etc/redis/redis.conf
   redis-1:
     container_name: redis-1
     image: redis:6.0.10
@@ -20,4 +19,3 @@ services:
     #   - "./data/:/data"
     command:
       - redis-server
-      # - /etc/redis/redis.conf
